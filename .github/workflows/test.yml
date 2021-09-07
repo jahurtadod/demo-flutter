@@ -15,7 +15,7 @@ on:
 jobs:
   unittest:
     name: Unit Test on ${{ matrix.os }}
-    runs_on: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
