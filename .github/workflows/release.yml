@@ -60,6 +60,7 @@ jobs:
 
   create-build:
     name: Create ${{ matrix.target }} build
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         target: [macOS, Windows, Android]
