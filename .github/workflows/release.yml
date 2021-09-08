@@ -33,7 +33,7 @@ jobs:
           name: changelog
           path: CHANGELOG.md
 
-  dratt-release:
+  draft-release:
     name: Draft Github release
     needs: generate-changelog
     runs-on: ubuntu-latest
