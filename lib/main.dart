@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_application_1/ui/pages/counter_page.dart';
-import 'package:flutter_application_1/ui/pages/counter_provider_page.dart';
+import 'package:flutter_application_1/ui/router/route_generator.dart';
 
 void main() => runApp(MyApp());
 
@@ -11,10 +10,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'RutasApp',
       initialRoute: '/stateful',
-      routes: {
-        '/stateful': (_) => CounterPage(),
-        '/provider': (_) => CounterProviderPage(),
-      },
+      // routes: {
+      //   '/stateful': (_) => CounterPage(),
+      //   '/provider': (_) => CounterProviderPage(),
+      // },
+      onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }

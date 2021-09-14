@@ -28,7 +28,7 @@ class CustomAppMenu extends StatelessWidget {
           ),
           CustomFlatButton(
             text: 'Otra página',
-            onPressed: () {},
+            onPressed: () => Navigator.pushNamed(context, '/not-fount'),
           ),
         ],
       ),
